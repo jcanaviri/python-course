@@ -1,7 +1,7 @@
 class FiguraGeometrica:
     def __init__(self, ancho, alto):
-        self._ancho = ancho
-        self._alto = alto
+        self._ancho = self._validar(ancho) or 0
+        self._alto = self._validar(alto) or 0
 
     @property
     def ancho(self):
@@ -9,7 +9,7 @@ class FiguraGeometrica:
     
     @ancho.setter
     def ancho(self, ancho):
-        self._ancho = ancho
+        self._ancho = self._validar(ancho) or 0
 
     @property
     def alto(self):
@@ -17,10 +17,13 @@ class FiguraGeometrica:
     
     @alto.setter
     def alto(self, alto):
-        self._alto = alto
+        self._alto = self._validar(alto) or 0
 
     def __str__(self):
         return f'<FiguraGeometrica ({self._ancho}, {self._alto})>'
+    
+    def  _validar(self, value):
+        return value if 0 < value < 10 else False
 
 class Color:
     def __init__(self, color):
@@ -64,7 +67,7 @@ cuadrado = Cuadrado(5, 'red')
 # MRO Method resolution order
 print(Cuadrado.mro())
 
-rectangulo = Rectangulo(4, 5, 'blue')
+rectangulo = Rectangulo(-4, 5, 'blue')
 
 print(rectangulo)
 print(rectangulo.area())
