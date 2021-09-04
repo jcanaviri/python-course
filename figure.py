@@ -1,4 +1,6 @@
-class FiguraGeometrica:
+from abc import ABC, abstractmethod
+
+class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         self._ancho = self._validar(ancho) or 0
         self._alto = self._validar(alto) or 0
@@ -6,18 +8,14 @@ class FiguraGeometrica:
     @property
     def ancho(self):
         return self._ancho
-    
-    @ancho.setter
-    def ancho(self, ancho):
-        self._ancho = self._validar(ancho) or 0
 
     @property
     def alto(self):
         return self._alto
     
-    @alto.setter
-    def alto(self, alto):
-        self._alto = self._validar(alto) or 0
+    @abstractmethod
+    def area(self):
+        pass
 
     def __str__(self):
         return f'<FiguraGeometrica ({self._ancho}, {self._alto})>'
@@ -71,3 +69,7 @@ rectangulo = Rectangulo(-4, 5, 'blue')
 
 print(rectangulo)
 print(rectangulo.area())
+
+# figura = FiguraGeometrica() -> error
+
+print(FiguraGeometrica.mro())
