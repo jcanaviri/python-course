@@ -1,0 +1,17 @@
+02:30:07: DEBUG [logger_file.py:12] This is a debug message
+02:30:07: INFO [logger_file.py:13] This is a info message
+02:30:07: WARNING [logger_file.py:14] This is a warning message
+02:30:07: ERROR [logger_file.py:15] This is a error message
+02:30:07: CRITICAL [logger_file.py:16] This is a critical message
+02:30:22 PM: DEBUG [logger_file.py:12] This is a debug message
+02:30:22 PM: INFO [logger_file.py:13] This is a info message
+02:30:22 PM: WARNING [logger_file.py:14] This is a warning message
+02:30:22 PM: ERROR [logger_file.py:15] This is a error message
+02:30:22 PM: CRITICAL [logger_file.py:16] This is a critical message
+04:12:17 PM: DEBUG [Person.py:47] <Person Josue>
+04:13:18 PM: DEBUG [Person.py:47] <Person Josue>
+04:14:32 PM: DEBUG [Person.py:47] <Person Josue>
+04:14:32 PM: DEBUG [Person.py:51] <Person John>
+04:15:55 PM: DEBUG [Person.py:47] <Person Josue>
+04:15:55 PM: DEBUG [Person.py:51] <Person John>
+04:15:55 PM: DEBUG [Person.py:55] <Person None>
