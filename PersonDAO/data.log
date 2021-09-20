@@ -19,3 +19,51 @@
 04:59:01 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000025659885150; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 04:59:36 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000028850F15150; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 04:59:36 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x0000028850BE1740; closed: 0>
+05:31:40 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x00000219DD508590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:31:40 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x00000219DF187AC0; closed: 0>
+05:31:40 PM: DEBUG [PersonDAO.py:28] <Person John>
+05:32:39 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x000002965D3D8590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:32:39 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x000002965EF17AC0; closed: 0>
+05:32:39 PM: DEBUG [PersonDAO.py:28] <Person John>
+05:32:39 PM: DEBUG [PersonDAO.py:28] <Person Susan>
+05:40:02 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x000001CDBD887590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:40:22 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x00000199C1E67590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:40:22 PM: DEBUG [PersonDAO.py:32] Person to insert: <Person Al>
+05:41:21 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x000001D969FF7590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:41:21 PM: DEBUG [PersonDAO.py:32] Person to insert: <Person Al>
+05:41:21 PM: DEBUG [PersonDAO.py:43] Inserted: 1
+05:41:21 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x000001D96BC47AC0; closed: 0>
+05:41:21 PM: DEBUG [PersonDAO.py:48] <Person John>
+05:41:21 PM: DEBUG [PersonDAO.py:48] <Person Susan>
+05:41:21 PM: DEBUG [PersonDAO.py:48] <Person Al>
+05:42:45 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000026B1A8C7590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+05:42:45 PM: DEBUG [PersonDAO.py:32] Person to insert: <Person Barry>
+05:42:45 PM: DEBUG [PersonDAO.py:43] Inserted: 1
+05:42:45 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x0000026B1C407AC0; closed: 0>
+05:42:45 PM: DEBUG [PersonDAO.py:48] <Person John>
+05:42:45 PM: DEBUG [PersonDAO.py:48] <Person Susan>
+05:42:45 PM: DEBUG [PersonDAO.py:48] <Person Al>
+05:42:45 PM: DEBUG [PersonDAO.py:48] <Person Barry>
+07:01:10 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x000001FC54EC7590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:01:10 PM: DEBUG [PersonDAO.py:42] Person was updated: <Person Bruno>
+07:01:10 PM: DEBUG [PersonDAO.py:55] Person update: 1
+07:01:10 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x000001FC56B27AC0; closed: 0>
+07:01:10 PM: DEBUG [PersonDAO.py:61] <Person John>
+07:01:10 PM: DEBUG [PersonDAO.py:61] <Person Susan>
+07:01:10 PM: DEBUG [PersonDAO.py:61] <Person Bruno>
+07:01:10 PM: DEBUG [PersonDAO.py:61] <Person Barry>
+07:18:42 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000015D97FD7590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:18:42 PM: DEBUG [PersonDAO.py:42] Person was updated: <Person Bruno>
+07:18:42 PM: DEBUG [PersonDAO.py:66] Person update: 1
+07:19:02 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000024697C27590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:19:02 PM: DEBUG [PersonDAO.py:42] Person was updated: <Person Bruno>
+07:19:02 PM: DEBUG [PersonDAO.py:66] Person update: 1
+07:19:52 PM: DEBUG [Connection.py:24] Successfully conected: <connection object at 0x0000017078F67590; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+07:19:52 PM: DEBUG [PersonDAO.py:42] Person was updated: <Person Bruno>
+07:19:52 PM: DEBUG [PersonDAO.py:66] Person update: 1
+07:19:52 PM: DEBUG [PersonDAO.py:53] Deleted: <Person None>
+07:19:52 PM: DEBUG [PersonDAO.py:72] People deleted: 1
+07:19:52 PM: DEBUG [Connection.py:37] The cursor is open <cursor object at 0x000001707AAE7AC0; closed: 0>
+07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Susan>
+07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Bruno>
+07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Barry>
