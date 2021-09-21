@@ -1,6 +1,6 @@
 from Person import Person
-from Connection import Connection
 from logger_file import log
+from CursorPool import CursorPool
 
 class PersonDAO:
     '''DAO means Data access object'''
@@ -11,7 +11,7 @@ class PersonDAO:
 
     @classmethod
     def select(cls):
-        with Connection.get_cursor() as cursor:
+        with CursorPool() as cursor:
             cursor.execute(cls._SELECT)
             result = cursor.fetchall()
             person_list = []
@@ -24,52 +24,49 @@ class PersonDAO:
 
     @classmethod
     def insert(cls, person):
-        with Connection.get_connection() as conn:
-            with conn.cursor() as cursor:
-                values = (person.first_name, person.last_name, person.email)
-                cursor.execute(cls._INSERT, values)
+        with CursorPool() as cursor:
+            values = (person.first_name, person.last_name, person.email)
+            cursor.execute(cls._INSERT, values)
 
-                log.debug(f'Person to insert: {person}')
-                return cursor.rowcount
+            log.debug(f'Person to insert: {person}')
+            return cursor.rowcount
 
     @classmethod
     def update(cls, person):
-        with Connection.get_connection() as conn:
-            with conn.cursor() as cursor:
-                values = (person.first_name, person.last_name, person.email, person.person_id)
-                cursor.execute(cls._UPDATE, values)
+        with CursorPool() as cursor:
+            values = (person.first_name, person.last_name, person.email, person.person_id)
+            cursor.execute(cls._UPDATE, values)
                 
-                log.debug(f'Person was updated: {person}')
+            log.debug(f'Person was updated: {person}')
 
-                return cursor.rowcount
+            return cursor.rowcount
     
     @classmethod
     def delete(cls, person):
-        with Connection.get_connection() as conn:
-            with conn.cursor() as cursor:
-                to_delete = (person.person_id, )
-                cursor.execute(cls._DELETE, to_delete)
+        with CursorPool() as cursor:
+            to_delete = (person.person_id, )
+            cursor.execute(cls._DELETE, to_delete)
                 
-                log.debug(f'Deleted: {person}')
+            log.debug(f'Deleted: {person}')
 
-                return cursor.rowcount
+            return cursor.rowcount
 
 if __name__ == '__main__':
     # Insert a person
-    # john = Person(first_name='Barry', last_name='Alen', email='john@gmail.com')
-    # result = PersonDAO.insert(john)
-    # log.debug(f'Inserted: {result}')
+    jaden = Person(first_name='Jaden', last_name='Smith', email='jaden@gmail.com')
+    result = PersonDAO.insert(jaden)
+    log.debug(f'Inserted: {result}')
 
     # Update a person
-    bruno = Person(4, 'Bruno', 'Diaz', 'batman@gmail.com')
+    bruno = Person(4, 'Bruce', 'Wayne', 'bruce@gmail.com')
     result = PersonDAO.update(bruno)
     log.debug(f'Person update: {result}')
 
 
     # Delete a person
-    john = Person(person_id=1)
-    del_persons = PersonDAO.delete(john)
-    log.debug(f'People deleted: {del_persons}')
+    # john = Person(person_id=1)
+    # del_persons = PersonDAO.delete(john)
+    # log.debug(f'People deleted: {del_persons}')
 
     # Select all persons
     persons = PersonDAO.select()

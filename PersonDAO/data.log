@@ -101,3 +101,24 @@
 09:52:05 AM: DEBUG [CursorPool.py:29] [(2, 'Susan', 'Smith', 'susan@gmail.com'), (5, 'Barry', 'Alen', 'john@gmail.com'), (4, 'Bruno', 'Diaz', 'batman@gmail.com')]
 09:52:05 AM: DEBUG [CursorPool.py:16] __exit__ was triggered
 09:52:05 AM: DEBUG [CursorPool.py:22] Commit transaction
+10:13:26 AM: DEBUG [CursorPool.py:10] With starts now
+10:13:26 AM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000025956AF3850>
+10:13:26 AM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000025956A87BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:13:26 AM: DEBUG [PersonDAO.py:31] Person to insert: <Person Jaden>
+10:13:26 AM: DEBUG [CursorPool.py:16] __exit__ was triggered
+10:13:26 AM: DEBUG [CursorPool.py:22] Commit transaction
+10:13:26 AM: DEBUG [PersonDAO.py:58] Inserted: 1
+10:13:26 AM: DEBUG [CursorPool.py:10] With starts now
+10:13:26 AM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000259583BB7B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:13:26 AM: DEBUG [PersonDAO.py:40] Person was updated: <Person Bruce>
+10:13:26 AM: DEBUG [CursorPool.py:16] __exit__ was triggered
+10:13:26 AM: DEBUG [CursorPool.py:22] Commit transaction
+10:13:26 AM: DEBUG [PersonDAO.py:63] Person update: 1
+10:13:26 AM: DEBUG [CursorPool.py:10] With starts now
+10:13:26 AM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000259583BB260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:13:26 AM: DEBUG [CursorPool.py:16] __exit__ was triggered
+10:13:26 AM: DEBUG [CursorPool.py:22] Commit transaction
+10:13:26 AM: DEBUG [PersonDAO.py:74] <Person Susan>
+10:13:26 AM: DEBUG [PersonDAO.py:74] <Person Bruce>
+10:13:26 AM: DEBUG [PersonDAO.py:74] <Person Barry>
+10:13:26 AM: DEBUG [PersonDAO.py:74] <Person Jaden>
