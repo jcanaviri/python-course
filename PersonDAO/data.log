@@ -67,3 +67,37 @@
 07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Susan>
 07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Bruno>
 07:19:52 PM: DEBUG [PersonDAO.py:77] <Person Barry>
+11:28:08 PM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000018DA18428E0>
+11:28:08 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000018DA3727260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:28:08 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000018DA37277B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:06 PM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x000001F7C9CB28E0>
+11:29:06 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001F7CC058260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:07 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001F7CC0587B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:07 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001F7CC0588C0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:07 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001F7CC0589D0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:59 PM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x000001B7DF615880>
+11:29:59 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001B7E1497260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:59 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001B7E14977B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:59 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001B7E14978C0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:59 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001B7E14979D0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:29:59 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x000001B7E1497AE0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:30:17 PM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x00000149DABC5880>
+11:30:17 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000149DCF07260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:30:17 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000149DCF077B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:30:17 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000149DCF078C0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:30:17 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000149DCF079D0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:30:17 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000149DCF07AE0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000019AAA2128E0>
+11:39:02 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000019AAC0D7260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:48] Retorning the conn to the pool <connection object at 0x0000019AAC0D7260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000019AAC0D7260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000019AAC0D77B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000019AAC0D78C0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:02 PM: DEBUG [ConnPool.py:38] Pool <connection object at 0x0000019AAC0D79D0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:52:05 AM: DEBUG [CursorPool.py:10] With starts now
+09:52:05 AM: DEBUG [ConnPool.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x00000230B45B28E0>
+09:52:05 AM: DEBUG [ConnPool.py:38] Pool <connection object at 0x00000230B695F7B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:52:05 AM: DEBUG [CursorPool.py:27] Inside with statement
+09:52:05 AM: DEBUG [CursorPool.py:29] [(2, 'Susan', 'Smith', 'susan@gmail.com'), (5, 'Barry', 'Alen', 'john@gmail.com'), (4, 'Bruno', 'Diaz', 'batman@gmail.com')]
+09:52:05 AM: DEBUG [CursorPool.py:16] __exit__ was triggered
+09:52:05 AM: DEBUG [CursorPool.py:22] Commit transaction
