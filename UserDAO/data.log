@@ -1,0 +1,113 @@
+10:50:33 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000029E6C0A28E0>
+10:50:33 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000029E6DF9F260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:50:33 AM: DEBUG [Conn.py:48] Retorning the conn to the pool <connection object at 0x0000029E6DF9F260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:50:33 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000029E6DF9F260; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:50:33 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000029E6DF9F7B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:50:33 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000029E6DF9F8C0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:50:33 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000029E6DF9F9D0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:52:19 AM: DEBUG [PoolCursor.py:10] With starts now
+10:52:19 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x00000143BFC828E0>
+10:52:19 AM: DEBUG [Conn.py:38] Pool <connection object at 0x00000143C202E7B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:52:19 AM: DEBUG [PoolCursor.py:27] Inside with statement
+10:52:19 AM: DEBUG [PoolCursor.py:29] []
+10:52:19 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+10:52:19 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:13:54 AM: DEBUG [PoolCursor.py:10] With starts now
+11:13:54 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000022E897B65E0>
+11:13:54 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000022E89770BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:13:54 AM: DEBUG [UserDAO.py:31] User to insert: <User Erick Cartman123>
+11:13:54 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:13:54 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:13:54 AM: DEBUG [UserDAO.py:57] Inserted: 1
+11:13:54 AM: DEBUG [PoolCursor.py:10] With starts now
+11:13:54 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000022E8B09B7B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:13:54 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:13:54 AM: ERROR [PoolCursor.py:19] Some error happend: column "user_id" does not exist
+LINE 1: SELECT * FROM public.user ORDER BY user_id
+                                           ^
+ <class 'psycopg2.errors.UndefinedColumn'>, <traceback object at 0x0000022E8B319680>
+11:16:13 AM: DEBUG [PoolCursor.py:10] With starts now
+11:16:13 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000019BFE9C9670>
+11:16:13 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000019BFE886BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:16:13 AM: DEBUG [UserDAO.py:31] User to insert: <User Stan Stan123>
+11:16:13 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:16:13 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:16:13 AM: DEBUG [UserDAO.py:57] Inserted: 1
+11:16:13 AM: DEBUG [PoolCursor.py:10] With starts now
+11:16:13 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000019BFEE527B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:16:13 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:16:13 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:16:13 AM: DEBUG [UserDAO.py:73] <User Erick Cartman123>
+11:16:13 AM: DEBUG [UserDAO.py:73] <User Stan Stan123>
+11:18:52 AM: DEBUG [PoolCursor.py:10] With starts now
+11:18:52 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000020366989670>
+11:18:52 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000020366946BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:18:52 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:18:52 AM: ERROR [PoolCursor.py:19] Some error happend: invalid input syntax for type integer: "Kyle"
+LINE 1: ...user SET username='Kyle123', password=1 WHERE user_id='Kyle'
+                                                                 ^
+ <class 'psycopg2.errors.InvalidTextRepresentation'>, <traceback object at 0x0000020368480A00>
+11:19:55 AM: DEBUG [PoolCursor.py:10] With starts now
+11:19:55 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x000002169A599670>
+11:19:55 AM: DEBUG [Conn.py:38] Pool <connection object at 0x000002169A556BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:19:55 AM: DEBUG [UserDAO.py:40] user was updated: <User Kyle Kyle123>
+11:19:55 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:19:55 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:19:55 AM: DEBUG [UserDAO.py:62] User update: 1
+11:19:55 AM: DEBUG [PoolCursor.py:10] With starts now
+11:19:55 AM: DEBUG [Conn.py:38] Pool <connection object at 0x000002169BE527B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:19:55 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:19:55 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:19:55 AM: DEBUG [UserDAO.py:73] <User Kyle Kyle123>
+11:19:55 AM: DEBUG [UserDAO.py:73] <User Stan Stan123>
+11:23:31 AM: DEBUG [PoolCursor.py:10] With starts now
+11:23:31 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000021231EF86A0>
+11:23:31 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000021231EB6BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:23:31 AM: DEBUG [UserDAO.py:49] Deleted: <User None None>
+11:23:31 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:23:31 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:23:31 AM: DEBUG [UserDAO.py:68] People deleted: 1
+11:23:31 AM: DEBUG [PoolCursor.py:10] With starts now
+11:23:31 AM: DEBUG [Conn.py:38] Pool <connection object at 0x00000212337D27B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:23:31 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:23:31 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:23:31 AM: DEBUG [UserDAO.py:73] <User Stan Stan123>
+11:36:23 AM: DEBUG [PoolCursor.py:10] With starts now
+11:36:23 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x000002264E808A90>
+11:36:23 AM: DEBUG [Conn.py:38] Pool <connection object at 0x000002264E7C6BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:36:23 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:36:23 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:37:54 AM: DEBUG [PoolCursor.py:10] With starts now
+11:37:54 AM: DEBUG [Conn.py:28] Pool successfully created <psycopg2.pool.SimpleConnectionPool object at 0x0000026807A85880>
+11:37:54 AM: DEBUG [Conn.py:38] Pool <connection object at 0x0000026807DE3BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:37:54 AM: DEBUG [PoolCursor.py:16] __exit__ was triggered
+11:37:54 AM: DEBUG [PoolCursor.py:22] Commit transaction
+11:41:18 AM: DEBUG [menu.py:16] <User Cartman Cartman123>
+11:44:34 AM: DEBUG [UserDAO.py:31] User to insert: <User Kenny Kenny123>
+11:44:34 AM: DEBUG [menu.py:24] Users inserted: 1
+11:44:47 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:44:47 AM: DEBUG [menu.py:17] <User Kenny Kenny123>
+11:48:54 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:48:54 AM: DEBUG [menu.py:17] <User Kenny Kenny123>
+11:49:12 AM: DEBUG [UserDAO.py:31] User to insert: <User Stan Stan123>
+11:49:12 AM: DEBUG [menu.py:24] Users inserted: 1
+11:49:14 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:49:14 AM: DEBUG [menu.py:17] <User Kenny Kenny123>
+11:49:14 AM: DEBUG [menu.py:17] <User Stan Stan123>
+11:50:02 AM: DEBUG [UserDAO.py:31] User to insert: <User Kyle Kyle123>
+11:50:02 AM: DEBUG [menu.py:24] Users inserted: 1
+11:50:05 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:50:05 AM: DEBUG [menu.py:17] <User Kenny Kenny123>
+11:50:05 AM: DEBUG [menu.py:17] <User Stan Stan123>
+11:50:05 AM: DEBUG [menu.py:17] <User Kyle Kyle123>
+11:51:18 AM: DEBUG [UserDAO.py:40] user was updated: <User Misterion Misterion123>
+11:51:18 AM: DEBUG [menu.py:33] Users update: 1
+11:51:24 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:51:24 AM: DEBUG [menu.py:17] <User Misterion Misterion123>
+11:51:24 AM: DEBUG [menu.py:17] <User Stan Stan123>
+11:51:24 AM: DEBUG [menu.py:17] <User Kyle Kyle123>
+11:51:42 AM: DEBUG [UserDAO.py:49] Deleted: <User None None>
+11:51:42 AM: DEBUG [menu.py:38] People deleted: 1
+11:51:46 AM: DEBUG [menu.py:17] <User Cartman Cartman123>
+11:51:46 AM: DEBUG [menu.py:17] <User Stan Stan123>
+11:51:46 AM: DEBUG [menu.py:17] <User Kyle Kyle123>
