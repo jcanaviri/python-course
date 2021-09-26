@@ -10,3 +10,12 @@ print('Snake \U0001f40d')
 
 character = chr(64)
 print(character)
+
+# Conversion
+string = 'Español'
+print(f'Original: {string}')
+str_bytes = string.encode('utf-8')
+print(f'Codificado: {str_bytes}')
+
+bytes_str = str_bytes.decode('utf-8')
+print(f'Decodificado {bytes_str}')
