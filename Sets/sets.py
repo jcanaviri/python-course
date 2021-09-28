@@ -20,4 +20,3 @@ print(my_set)
 
 my_set = set([6, 7, 8])
 print(my_set)
-
