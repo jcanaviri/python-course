@@ -12,8 +12,14 @@ conn = psycopg2.connect(
 try:
     with conn:
         with conn.cursor() as cursor:
-            sql = '''UPDATE public.person SET last_name=%s WHERE person_id=%s'''
-            values = ('Jackson', '1')
+            sql = '''UPDATE public.person SET first_name=%s, last_name=%s, email=%s WHERE person_id=%s'''
+
+            print('Update user 1')
+            first_name = input('New first name: ')
+            last_name = input('New last first name: ')
+            email = input('New email: ')
+
+            values = (first_name, last_name, email, 1)
             cursor.execute(sql, values)
             # conn.commit() we don't need this because of the with statement
             counter = cursor.rowcount

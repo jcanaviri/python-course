@@ -16,7 +16,10 @@ try:
             person_id = input('Write the person_id that you want: ')
             cursor.execute(sql, (person_id,))
             result = cursor.fetchone()
-            print(result)
+            if not result:
+                print(f'There is no user with id {person_id}')
+            else:
+                print(result)
 except Exception as e:
     print(f'Some error happend: {e}')
 finally:

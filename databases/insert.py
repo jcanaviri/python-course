@@ -14,7 +14,12 @@ try:
         with conn.cursor() as cursor:
             sql = '''INSERT INTO public.person(first_name, last_name, email)
                         VALUES(%s, %s, %s)'''
-            values = ('Rocio', 'Caballero', 'rocio@gmail.com')
+
+            first_name = input('Person first_name field: ')
+            last_name = input('Person last_name field: ')
+            email = input('Person email field: ')
+
+            values = (first_name, last_name, email.lower())
             cursor.execute(sql, values)
             # conn.commit() we don't need this because of the with statement
             counter = cursor.rowcount
