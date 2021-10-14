@@ -5,7 +5,7 @@ while True:
     print('Options')
     print('1.- Add movie')
     print('2.- Show movies')
-    print('3.- Delete moviezs')
+    print('3.- Delete movies')
     print('4.- Exit')
 
     option = int(input('> '))
