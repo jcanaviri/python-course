@@ -7,8 +7,7 @@ try:
     b = int(input('Enter the second number: '))
 
     if a == b:
-        raise SameNumsException('My own error')
-
+        raise SameNumsException('The number are the same')
     result = a / b
 except ZeroDivisionError as e:
     print(f'Zero division: {e} {type(e)}')
@@ -22,4 +21,3 @@ finally:
     print('Finally')
 
 print(f'Result: {result}')
-print('Continuamos...')
