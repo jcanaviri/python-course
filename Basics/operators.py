@@ -64,4 +64,3 @@ def is_greater():
         print(f'El mayor es: {num1}')
     else:
         print(f'El mayor es: {num2}')
-

@@ -3,7 +3,7 @@ import fileinput
 import os
 
 def find_files(path='.', ext='.py'):
-    for root, dirs, filenames in os.walk(path):
+    for root, _, filenames in os.walk(path):
         for filename in filenames:
             if filename.endswith(ext):
                 yield(os.path.join(root, filename))
