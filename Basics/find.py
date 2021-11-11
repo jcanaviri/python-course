@@ -22,7 +22,7 @@ COUNTERS = dict(lines=is_line, classes=has_class,
 
 
 def find_gods():
-    stats = collections.defaultdict(collections.Counter)
+    stats = collections.defaultdict(collections.Counter) # A dict with Counter objects
     for line in fileinput.input(find_files()):
         for key, func in COUNTERS.items():
             if func(line):
